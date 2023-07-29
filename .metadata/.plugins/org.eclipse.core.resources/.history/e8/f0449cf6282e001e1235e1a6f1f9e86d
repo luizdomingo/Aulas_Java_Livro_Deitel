@@ -58,6 +58,6 @@ public class PessoaFisica extends Pessoa // Uma subclasse de Pessoa que represen
 			   + "Endereco " + this.getEndereco() + "\n"
 			   + "Telefone " + this.getTelefone() + "\n"
 			   + "Renda de: " + renda + "\n"
-			   + "imposto: R$" + this.calcularImposto();
+			   + "Um imposto de: R$" + this.calcularImposto();
 	}
 }
