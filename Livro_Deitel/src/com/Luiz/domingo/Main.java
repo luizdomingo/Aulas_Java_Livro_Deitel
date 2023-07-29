@@ -5,7 +5,8 @@ public class Main
 
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
+		Pessoa p = new PessoaFisica("056.986.896-52", 30.000, "Luiz domingo.Java", "087-99865.5689", "Rua Tal");
+		System.out.println(p.Info());
 	}
 
 }

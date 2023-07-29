@@ -1,0 +1,26 @@
+package com.Luiz.domingo;
+
+public class PessoaFisica
+{
+	/* Atributos Da class Pessoa Fisica*/
+	private String cpf;
+	private double renda;
+	
+	/* Construtor da class pessoa fisica */
+	public PessoaFisica(String cpf, double renda) {
+		this.cpf = cpf;
+		this.renda = renda;
+	}
+	
+	/* Metodos Getters e setters */
+	
+	public String getCpf() {
+		return this.cpf;
+	}
+	
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	
+	
+}
