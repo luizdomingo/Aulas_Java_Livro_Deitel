@@ -1,0 +1,28 @@
+package com.exercicios.Curso.Java.Udemy;
+
+import java.util.Scanner;
+
+public class ExerciciosNegativos {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Quantos você vai digitar ? ");
+		int quantidadeNumeros = sc.nextInt();
+		
+		for(int i=0; i < quantidadeNumeros; i++)
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//Fechando o Scanner
+		sc.close();
+	}
+
+}
