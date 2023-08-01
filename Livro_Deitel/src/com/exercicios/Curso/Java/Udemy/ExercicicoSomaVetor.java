@@ -33,6 +33,8 @@ public class ExercicicoSomaVetor
 			numero++;
 		}
 		
+		System.out.println("----------------------------------");
+		
 		numero = 0;
 		
 		while(numero < quantidadeNumeros) 
@@ -43,9 +45,9 @@ public class ExercicicoSomaVetor
 		
 		media = soma / quantidadeNumeros;
 		System.out.println("------------------------------------");
-		System.out.println("A soma é: " + soma);
-		System.out.println("A média é: " + media);
-		
+		System.out.print("A soma é: " + soma + "\n");
+		System.out.printf("A média é: %.2f \n",  media);
+		System.out.printf("A raiz quadrada da média é: %.2f", Math.sqrt(media));
 		sc.close();
 	}//Fim Metodo SomarVetor
 }//Fim Class
