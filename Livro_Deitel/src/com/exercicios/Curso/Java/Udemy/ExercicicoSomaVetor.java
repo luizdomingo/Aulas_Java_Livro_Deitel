@@ -25,9 +25,9 @@ public class ExercicicoSomaVetor
 		
 		int[] somaNumbers = new int[quantidadeNumeros];
 			
-		while( numero < quantidadeNumeros)
+		while( numero < quantidadeNumeros) //Adciona os Valores Dentro do Vetor
 		{
-			System.out.print("Digite Um Número: "); 
+			System.out.print("Digite " + (numero + 1) + "° Número: "); 
 			somaNumbers[numero] = sc.nextInt();
 			soma += somaNumbers[numero];
 			numero++;
@@ -37,7 +37,7 @@ public class ExercicicoSomaVetor
 		
 		numero = 0;
 		
-		while(numero < quantidadeNumeros) 
+		while(numero < quantidadeNumeros) //Exibi os Elementos do Vetor
 		{
 			System.out.println(somaNumbers[numero]);
 			numero++;

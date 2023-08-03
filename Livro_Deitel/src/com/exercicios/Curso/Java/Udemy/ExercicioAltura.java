@@ -19,20 +19,21 @@ public class ExercicioAltura
 		
 		System.out.print("Quantas Pessoas irá Cadastrar ? ");
 		int quantidadePessoas = sc.nextInt();
-		
+				
 		int [] idade = new int[quantidadePessoas];
 		double [] altura = new double[quantidadePessoas];
 		String[] nomes = new String[quantidadePessoas];
 		
 		int i = 0;
 		
-		//Loop par aadcionar os dados dentro dos vetores
+		//Loop Para Adcionar os Dados Dentro dos Vetores
 		while(i < quantidadePessoas)
 		{
-			System.out.println("Digite os dados da " + (i + 1) +"° Pessoa");
+			System.out.println("Digite os Dados da " + (i + 1) +"° Pessoa");
+			
 			System.out.print("Nome: ");
 			nomes[i] = sc.next();
-			
+									
 			System.out.print("Idade: ");
 			idade[i] = sc.nextInt();
 			
@@ -44,12 +45,16 @@ public class ExercicioAltura
 		
 		i = 0;
 		double alturaMedia =0;
+		int idadeMenorQueDizesseis = 0;
 		
 		//Loop para Exibir os Dados dos Vetores
 		while( i < quantidadePessoas) 
 		{
+			if (idade[i] < 16) // Condicional Que Verifica se Idede é Menor Que 16 Anos
+			{
+				idadeMenorQueDizesseis ++;
+			}
 			System.out.println("Dados da "+ (i + 1) +"° Pessoa.");
-			
 			System.out.print("Nome: " + nomes[i] + "\n");
 			System.out.print("Idade: " + idade[i] + "\n");
 			System.out.print("Altura: " + altura[i] + "\n");
@@ -57,6 +62,9 @@ public class ExercicioAltura
 			System.out.println("--------------------------------");
 			i++;
 		}
+		
+		double percentual = (100 / quantidadePessoas) * idadeMenorQueDizesseis ;  
+		System.out.printf("O Percentual de Pessosas com Idade Menor que 16 Anos é: %.2f%%%n", percentual );
 		
 		System.out.printf("A média de Altura é: %.2f", (alturaMedia / quantidadePessoas));
 		sc.close();
