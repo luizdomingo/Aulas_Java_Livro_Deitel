@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="com.Luiz.domingo.PessoaFisica"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="javax.lang.model.element.QualifiedNameable"/>
 </qualifiedTypeNameHistroy>
