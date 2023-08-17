@@ -21,7 +21,7 @@ public class AbaixoDaMedia {
         int quantyty = sc.nextInt();
         int [] vetor =  new int[quantyty];
         int contador = 0, soma = 0;
-        double media = 0, abaixoMedia = 0 ;
+        double media = 0;
         
         System.out.println("-------------------------------\n");
         
@@ -32,6 +32,8 @@ public class AbaixoDaMedia {
             vetor [contador] = valor ;
             contador++;
         }
+        
+        sc.close();
         
         //Loop Para Realizar o Calculo da Média 
         for(contador = 0; contador < quantyty; contador ++)
@@ -55,6 +57,6 @@ public class AbaixoDaMedia {
                 System.out.println(vetor[contador]);
             }
         }
-        sc.close();
+        
 	}
 }
